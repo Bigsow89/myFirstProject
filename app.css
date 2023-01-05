@@ -1,14 +1,17 @@
 * {
-  
+  margin: 0;
   padding: 0;
 }
 body {
-  background-color: rgb(250, 219, 163) ;
+  background-color: #3A4F7A;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
 }
 nav {
-  
+  background-color: #0A2647;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid white;
 }
 .nav-left {
   
@@ -22,64 +25,114 @@ nav {
 }
 
 ul {
-  
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 li {
-  
+  background-color: #3A4F7A;
   list-style: none;
+  padding: 10px 12px;
+  border-radius: 10px;
   
 }
 a {
   text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #0A2647;
 }
 
 header {
-  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  padding: 0;
   margin: 20px 60px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 h1 {
   text-align: center;
 }
 
 #duck {
-  
+  flex-direction: column;
   display: flex;
   justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid white;
 }
+#emergency {
+  background-color: #0A2647;
+  border-bottom: 2px solid white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
+}
 
 #emerg {
   text-align: center;
+  margin-bottom: 12px;
 }
 
-
-
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .grid-container {
   
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 3px;
+  grid-gap: 6px;
   width: 80%;
   margin: 0 auto;
 
 }
 
 .grid-item {
-  border: 2px solid blue;
+  border: 2px solid #3A4F7A;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 150px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  background-color: #3A4F7A;
+  transition: ease-out 0.5s;
 
+}
+.grid-item:hover {
+  background-color: #FFC6D3;
+}
+button {
+  padding: 8px 12px;
+  background-color: #FFC6D3;
+  border-radius: 10px;
+  color: white;
 }
 
 footer {
-  
+  background-color: #3A4F7A;
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+footer h2 {
+  margin: 20px;
+}
+form input {
+  padding: 6px 12px;
+}
+
+.duck img {
+  margin-bottom: 20px;
+  border-radius: 12px;
 }
